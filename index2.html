@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>免费ChatGPT - 地址发布页</title>
+  <meta name="description" content="免费ChatGPT地址发布页，获取最新可用站点地址和客户端下载 QQ群：1078489662">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://freegpt.tech">
+  <link rel="preconnect" href="https://freegpt.win">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 背景动画画布 -->
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <!-- 顶部渐变条 -->
+  <div class="top-bar" aria-hidden="true"></div>
+
+  <div class="container">
+
+    <!-- 头部 -->
+    <header class="header">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><g style="opacity:1"><path d="M255,230a25,25,0,1,1-25,25A25,25,0,0,1,255,230Zm15.48,27.25a11.58,11.58,0,0,0-.1-4.7,2.74,2.74,0,0,0-.7-1.21c-.43-.41-1.23-.57-1.4-.8-.68-.88-.21-1.48-1-2.26-.18-.22-.76-1.07-1-1.35a8,8,0,0,0-2.2-1.7,19.32,19.32,0,0,0-2.31-.7,9.67,9.67,0,0,0-2.19-.42c-.23-.06-.8-.1-1-.18a4.55,4.55,0,0,0-3-1l-.1-2.13a1.76,1.76,0,1,0-1.2,0l-.2,2.1a4.73,4.73,0,0,0-2.33.49,4.34,4.34,0,0,1-1,.61c-.3.09-2.31.36-2.58.42l-.73.18a9.09,9.09,0,0,0-4.1,1.9,5.68,5.68,0,0,0-1.51,1.81c-.27.5-.18,1.17-.6,1.5s-.54.13-1,.4a2.39,2.39,0,0,0-.8.8,4,4,0,0,0-.5,2.47c0,2,.05,3.62,1.1,4.45a3.38,3.38,0,0,1,1.2,1,8.49,8.49,0,0,1,.5,1.4,4.83,4.83,0,0,0,.7,1.3c.63.85.9,1.85,2,2.4.35.19.62.4.71.45a8.1,8.1,0,0,0,1.65.65c.25.09.5.17.76.24s1.38.31,1.6.37c1.1.3,1.6-.2,2.3.4.4.8-.6,3.21.65,3.16.7,0,1.18-.5,1.86-.75,1.28-.48,2.75-.93,4.09-1.46l1-.37a29.17,29.17,0,0,1,2.94-1.13,9.72,9.72,0,0,0,2.73-1.21c.27-.18.54-.37.79-.57a13.9,13.9,0,0,0,1.56-1.79c.16-.23.3-.46.44-.7.35-.64.35-1.64.95-1.94A3.1,3.1,0,0,0,270.48,257.25Z" transform="translate(-230 -230)" style="fill:#06f"/></g><path d="M262.87,248.44c-1.86-1.12-5.63-1.31-8.22-1.31-3.32,0-7.05.39-9,2.11-1.55,1.35-1.7,3.81-1.7,5.71s.26,4.72,2,6.11c2,1.57,5.58,1.71,8.72,1.71,3.37,0,7,0,9-1.81,1.48-1.34,1.7-4.15,1.7-6C265.37,252.52,265.25,249.87,262.87,248.44Zm-11.73,8a1.23,1.23,0,0,1-1.1.6,1.35,1.35,0,0,1-1.1-.5,2.77,2.77,0,0,1-.3-1.55,3,3,0,0,1,.3-1.55,1.28,1.28,0,0,1,1.1-.5,1.41,1.41,0,0,1,1.1.6,2.72,2.72,0,0,1,.2,1.5A2.81,2.81,0,0,1,251.14,256.45Zm9.49,0a1.27,1.27,0,0,1-1.11.6,1.38,1.38,0,0,1-1.1-.5,2.91,2.91,0,0,1-.3-1.56,3,3,0,0,1,.3-1.55,1.29,1.29,0,0,1,1.1-.5,1.44,1.44,0,0,1,1.11.6,2.82,2.82,0,0,1,.2,1.5A2.85,2.85,0,0,1,260.63,256.42Z" transform="translate(-230 -230)" style="fill:#06f;opacity:1"/></svg>
+        <div>
+          <h1 class="site-title">免费ChatGPT</h1>
+          <p class="site-subtitle" id="siteDescription"></p>
+        </div>
+      </div>
+      <p class="header-tip">按 <kbd>Ctrl</kbd>+<kbd>D</kbd> 收藏本页，防止失联</p>
+      <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+    </header>
+
+    <!-- 公告 -->
+    <div class="announcement" id="announcement" hidden>
+      <span class="announcement-icon">⚠️</span>
+      <p class="announcement-text" id="announcementText"></p>
+      <button class="announcement-close" id="announcementClose" aria-label="关闭公告">&times;</button>
+    </div>
+
+    <div class="announcement" style="background-color: blueviolet; color: white; border-color: blueviolet;">
+      <span class="announcement-icon">📢</span>
+      <!-- <p class="announcement-text" style="color: white; font-weight: bold;">所有网站于2026年5月1日升级到最新版本，请刷新页面后再使用。<br>如遇任何使用问题，请加入QQ群联系站长，反馈核实后会赠送订阅一天。</p> -->
+      <p class="announcement-text" style="color: white; font-weight: bold;">网站自2023年运营以来，一直致力于为用户提供稳定、可靠的免费AI服务，当前网站还可免费画图（gpt-image-2）。</p>
+    </div>
+
+    <!-- 可用站点 -->
+    <section class="section" id="activeSection">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-icon">🟢</span>
+          国内可用站点
+        </h2>
+        <span class="badge badge-success" id="activeCount"></span>
+      </div>
+      <p class="section-desc">以下域名可在中国大陆直接访问，点击即可打开</p>
+      <div class="domain-grid" id="activeDomainList"></div>
+    </section>
+
+    <!-- 需要代理的域名 -->
+    <section class="section" id="proxySection">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-icon">🪜</span>
+          主域名
+        </h2>
+      </div>
+      <p class="section-desc">长久维护，需要使用代理（梯子）才能访问</p>
+      <div class="domain-grid" id="proxyDomainList"></div>
+    </section>
+
+    <!-- 已封锁域名 (折叠) -->
+    <section class="section section-muted">
+      <details class="blocked-details" id="blockedDetails">
+        <summary class="blocked-summary">
+          <span class="section-icon">🔴</span>
+          <span>已被封锁的域名</span>
+          <span class="badge badge-danger" id="blockedCount"></span>
+          <svg class="chevron-icon" viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+          </svg>
+        </summary>
+        <div class="blocked-content">
+          <p class="section-desc">以下域名已被阻断，仅作记录，目前使用代理（梯子）仍可以访问</p>
+          <div class="blocked-list" id="blockedDomainList"></div>
+        </div>
+      </details>
+    </section>
+
+    <!-- 客户端下载 -->
+    <section class="section" id="downloadSection">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-icon">📥</span>
+          客户端下载
+        </h2>
+        <span class="version-tag" id="versionTag"></span>
+      </div>
+      <p class="section-desc">客户端内置防屏蔽功能，更加稳定可靠。中国大陆用户如 GitHub 打不开或很慢，请优先使用下方两个加速下载链接。</p>
+      <div class="download-grid" id="downloadGrid"></div>
+    </section>
+
+    <!-- 使用说明 -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-icon">📖</span>
+          使用说明
+        </h2>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-num">1</div>
+          <p>优先使用上方标记为 <strong>🟢 可用</strong> 的域名直接访问</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">2</div>
+          <p>如果所有线路都无法访问，请尝试更换网络环境或使用客户端</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">3</div>
+          <p>客户端内置防屏蔽功能，不受域名封锁影响，推荐长期使用</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">4</div>
+          <p>收藏本页面或加入 QQ 群获取最新信息，防止失联</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+      <p>&copy; 2023-2026 免费ChatGPT &nbsp;|&nbsp; 为防止失联，请收藏本页面</p>
+      <div class="footer-links">
+        <a href="https://qm.qq.com/q/emLOhFElj2" id="qqGroupLink" target="_blank" rel="noopener">QQ 交流群</a>
+        <a href="#" id="githubLink" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="footer-credit">Designed & Built by <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> (Anthropic)</p>
+    </footer>
+
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/bg.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
